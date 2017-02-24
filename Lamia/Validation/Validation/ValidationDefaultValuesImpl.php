@@ -1,9 +1,11 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: irina
- * Date: 22.7.2016
- * Time: 15:59
+ * NOTICE OF LICENSE 
+ *
+ * This source file is released under commercial license by Lamia Oy. 
+ *
+ * @copyright  Copyright (c) 2017 Lamia Oy (https://lamia.fi) 
+ * @author     Irina Mäkipaja <irina@lamia.fi>
  */
 
 namespace Lamia\Validation\Validation;
@@ -12,20 +14,14 @@ use Lamia\Validation\Validation\Interfaces\ValidationDefaultValues;
 
 class ValidationDefaultValuesImpl implements ValidationDefaultValues
 {
-    private $defaults;
-    
-    public function __construct($path)
-    {
-        $this->defaults = $this->getConfig($path);
-    }
-
-    private function getConfig($path)
-    {
-        if (isset($_SERVER['DOCUMENT_ROOT']) && $_SERVER['DOCUMENT_ROOT'] !== '') {
-            return include $_SERVER['DOCUMENT_ROOT'] . '/' . $path;
-        }
-        return include $_SERVER['DOCUMENT_ROOT'] . $path;
-    }
+    private $defaults = array(
+        "min" => 0,
+        "max" => 10000,
+        "format" => 'Y-m-d H:i:s',
+        "optional" => false,
+        "numeric" => false,
+        "values" => null
+    );
 
     public function getValues()
     {

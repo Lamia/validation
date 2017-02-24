@@ -1,9 +1,11 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: irina
- * Date: 11.5.2016
- * Time: 16:31
+ * NOTICE OF LICENSE 
+ *
+ * This source file is released under commercial license by Lamia Oy. 
+ *
+ * @copyright  Copyright (c) 2017 Lamia Oy (https://lamia.fi) 
+ * @author     Irina Mäkipaja <irina@lamia.fi>
  */
 
 namespace Lamia\Validation\Exception;
