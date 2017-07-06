@@ -13,7 +13,7 @@ namespace Lamia\Validation\Tests\Validation;
 use Lamia\Validation\Exception\FieldValidationFailedException;
 use Lamia\Validation\Validation\TypeValidation\DateValidation;
 
-class DateValidationTest extends \PHPUnit_Framework_TestCase
+class DateValidationTest extends ValidationTest
 {
     private $validation;
     private $utilsMock;

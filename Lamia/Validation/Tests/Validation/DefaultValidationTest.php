@@ -14,7 +14,7 @@ namespace Lamia\Validation\Tests\Validation;
 use Lamia\Validation\Exception\FieldValidationFailedException;
 use Lamia\Validation\Validation\DefaultValidation;
 
-class DefaultValidationTest extends \PHPUnit_Framework_TestCase
+class DefaultValidationTest extends ValidationTest
 {
     private $validation;
     private $typeValidationMock;

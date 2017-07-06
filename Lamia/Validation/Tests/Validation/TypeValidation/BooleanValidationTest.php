@@ -13,7 +13,7 @@ namespace Lamia\Validation\Tests\Validation;
 use Lamia\Validation\Exception\FieldValidationFailedException;
 use Lamia\Validation\Validation\TypeValidation\BooleanValidation;
 
-class BooleanValidationTest extends \PHPUnit_Framework_TestCase
+class BooleanValidationTest extends ValidationTest
 {
     private $validation;
     private $utilsMock;

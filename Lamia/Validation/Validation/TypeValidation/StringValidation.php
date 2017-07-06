@@ -49,7 +49,7 @@ class StringValidation extends AbstractTypeValidation
             return;
         }
         $this->validateIsString($name, $value);
-        $this->getUtils()->validateInBounds($name, strlen($value), $lowerLimit, $upperLimit);
+        $this->getUtils()->validateInBounds($name, mb_strlen($value), $lowerLimit, $upperLimit);
         $this->validateNumeric($name, $value, $numeric);
         $this->validateValue($name, $value, $possibleValues);
     }

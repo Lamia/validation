@@ -14,7 +14,7 @@ use Lamia\Validation\Exception\FieldValidationFailedException;
 use Lamia\Validation\Validation\ValidationUtilsImpl;
 use phpDocumentor\Reflection\Types\Boolean;
 
-class ValidationUtilsImplTest extends \PHPUnit_Framework_TestCase
+class ValidationUtilsImplTest extends ValidationTest
 {
     private $utils;
 

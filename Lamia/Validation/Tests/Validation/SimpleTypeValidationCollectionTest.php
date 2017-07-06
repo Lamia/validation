@@ -12,7 +12,7 @@ namespace Lamia\Validation\Tests\Validation;
 
 use Lamia\Validation\Validation\SimpleTypeValidationCollection;
 
-class SimpleTypeValidationCollectionTest extends \PHPUnit_Framework_TestCase
+class SimpleTypeValidationCollectionTest extends ValidationTest
 {
     public function testAddingAndGetting()
     {

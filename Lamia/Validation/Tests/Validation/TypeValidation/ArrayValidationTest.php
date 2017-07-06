@@ -15,7 +15,7 @@ use Lamia\Validation\Exception\FieldValidationFailedException;
 use Lamia\Validation\Validation\TypeValidation\ArrayValidation;
 use phpDocumentor\Reflection\Types\Boolean;
 
-class ArrayValidationTest extends \PHPUnit_Framework_TestCase
+class ArrayValidationTest extends ValidationTest
 {
     private $validation;
     private $utilsMock;

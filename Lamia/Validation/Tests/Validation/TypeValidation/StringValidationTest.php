@@ -13,7 +13,7 @@ namespace Lamia\Validation\Tests\Validation;
 use Lamia\Validation\Exception\FieldValidationFailedException;
 use Lamia\Validation\Validation\TypeValidation\StringValidation;
 
-class StringValidationTest extends \PHPUnit_Framework_TestCase
+class StringValidationTest extends ValidationTest
 {
     private $validation;
     private $utilsMock;
@@ -60,6 +60,14 @@ class StringValidationTest extends \PHPUnit_Framework_TestCase
         $this->validation->validate('aa', 'aaaa', array('min' => 1, 'max' => 5));
         $this->assertTrue(true);
     }
+
+    public function testLimitsCheckCalledWithRightParameters2()
+    {
+        $this->utilsMock->expects($this->once())->method('validateInBounds')->with('aa', 5, 1, 5);
+        $this->validation->validate('aa', 'äääää', array('min' => 1, 'max' => 5));
+        $this->assertTrue(true);
+    }
+
 
     public function testFailsWhenNumericTrueButValueNotNumeric()
     {

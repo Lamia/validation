@@ -13,7 +13,7 @@ namespace Lamia\Validation\Tests\Validation;
 use Lamia\Validation\Exception\FieldValidationFailedException;
 use Lamia\Validation\Validation\TypeValidation\GeneralTypeValidation;
 
-class GeneralValidationTest extends \PHPUnit_Framework_TestCase
+class GeneralValidationTest extends ValidationTest
 {
 
     public function testConstructorParameterNotCollection()

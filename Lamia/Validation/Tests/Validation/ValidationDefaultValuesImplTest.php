@@ -12,7 +12,7 @@ namespace Lamia\Validation\Tests\Validation;
 
 use Lamia\Validation\Validation\ValidationDefaultValuesImpl;
 
-class ValidationDefaultValuesImplTest extends \PHPUnit_Framework_TestCase
+class ValidationDefaultValuesImplTest extends ValidationTest
 {
     public function testGetters()
     {
